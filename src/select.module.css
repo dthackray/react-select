@@ -63,6 +63,20 @@
     z-index: 100;
 }
 
-options.show {
+.show {
     display: block;
+}
+
+.option {
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+.option.selected {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+}
+
+.option.highlighted {
+    background-color: hsl(200, 100%, 70%);
 }
