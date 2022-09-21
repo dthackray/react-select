@@ -17,6 +17,7 @@ export function Select({ value, onChange, options }: SelectProps) {
 
     return (
         <div 
+            onBlur={() => setIsOpen(false)}
             onClick={() => setIsOpen(prev => !prev)}
             tabIndex={0} 
             className={styles.container}
