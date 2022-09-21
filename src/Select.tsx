@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "./select.module.css"
 
 type SelectOption = {
     label: string,
@@ -11,10 +12,10 @@ type SelectProps = {
     options: SelectOption[]
 }
 
-function Select({ value, onChange, options }: SelectProps) {
+export function Select({ value, onChange, options }: SelectProps) {
   return (
-    <div>Select</div>
+    <div className={styles.container}>
+
+    </div>
   )
 }
-
-export default Select
