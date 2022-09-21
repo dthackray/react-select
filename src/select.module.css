@@ -10,3 +10,7 @@
     border-radius: .25em;
     outline: none;
 }
+
+.container:focus {
+    border-color: hsl(200, 100%, 50%);
+}
