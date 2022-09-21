@@ -21,7 +21,7 @@ export function Select({ value, onChange, options }: SelectProps) {
     }
 
     function selectOption(option: SelectOption) {
-        onChange(option)
+        if (option !== value) onChange(option)
     }
 
     function isOptionSelected(option: SelectOption) {
